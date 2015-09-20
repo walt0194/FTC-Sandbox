@@ -165,22 +165,7 @@ public class K9TeleOp extends OpMode {
 			armPosition -= armDelta;
 		}
 
-		// update the position of the claw
-		if (gamepad1.x) {
-			clawPosition += clawDelta;
-		}
 
-		if (gamepad1.b) {
-			clawPosition -= clawDelta;
-		}
-
-        // clip the position values so that they never exceed their allowed range.
-        armPosition = Range.clip(armPosition, ARM_MIN_RANGE, ARM_MAX_RANGE);
-        clawPosition = Range.clip(clawPosition, CLAW_MIN_RANGE, CLAW_MAX_RANGE);
-
-		// write position values to the wrist and claw servo
-		arm.setPosition(armPosition);
-		claw.setPosition(clawPosition);
 
 
 
