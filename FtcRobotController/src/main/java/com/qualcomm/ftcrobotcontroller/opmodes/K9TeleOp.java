@@ -63,8 +63,6 @@ public class K9TeleOp extends OpMode {
 	// position of the claw servo
 	double clawPosition;
 
-	// amount to change the claw servo position by
-	double clawDelta = 0.1;
 
 	DcMotor motorRight;
 	DcMotor motorLeft;
